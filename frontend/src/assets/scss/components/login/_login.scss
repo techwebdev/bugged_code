@@ -1,0 +1,170 @@
+/* Setari centrare pe pagina */
+
+.global_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 10px;
+}
+
+/* Setari Div form login + imagine */
+
+.global_login_with_presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 800px;
+  box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* Setari Global Image presentation */
+
+.global_image_presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+  background-color: #fff;
+  min-height: 50vh;
+  border: 0 solid #DFE3E7;
+  border-radius: 0px 10px 10px 0px;
+  box-sizing: border-box;
+  padding: 0 10px;
+
+  > img {
+    width: 100%;
+    max-height: 500px;
+    box-sizing: border-box;
+    object-fit: cover;
+  }
+}
+
+/* Centrare si dimensiune form */
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  min-height: 50vh;
+  padding: 50px;
+  border-radius: 10px 0px 0px 10px;
+  min-width: 50%;
+  border: 0 solid #DFE3E7;
+  box-sizing: border-box;
+  border-right: 1px solid #efefef;
+}
+
+/* Avatar */
+
+.container_imagine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  > {
+    img {
+      border-radius: 50%;
+      max-width: 150px;
+    }
+  }
+}
+
+/* Campuri Login */
+
+.container_date {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  > {
+    label {
+      margin: 10px 0;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #DFE3E7;
+      border-radius: 2px;
+      font-weight: 400;
+
+      &::placeholder {
+        color: #475f7b;
+        font-size: 12px;
+      }
+
+      &:focus {
+        border: 1px solid #61b9c5;
+        outline: none;
+      }
+    }
+  }
+}
+
+/* Am uitat parola si tine-ma minte */
+
+.container_remember_forgot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+  align-items: center;
+  padding: 10px;
+
+  > {
+    label {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    span > a {
+      color: #6ed4e2;
+    }
+  }
+}
+
+/* Buton login */
+
+.buton-logare {
+  margin-top: 50px;
+  width: 100%;
+
+  > button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #6ed4e2;
+    border: 1px solid #61b9c5;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .global_login_with_presentation {
+    width: 90%;
+  }
+
+  .login_form {
+    width: 100%;
+    padding: 50px 15px;
+    border-radius: 10px;
+  }
+
+  .global_image_presentation {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../components/login/login.scss';
+
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  background-image: url(../../images/login-bg.jpg);
+  background-size: cover;
+  color: #475f7b;
+}
